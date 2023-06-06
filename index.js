@@ -10,41 +10,21 @@ loginBtn.addEventListener('click', (e)=> {
     let newPasswrd = password.value;
     let userPass = newUser + newPasswrd;
 
-    let errors = []
+    let errors = [];
 
     if(newUser === '')
-    errors = [...errors, 'Enter user name']
+    errors = [...errors, 'Enter user name'];
 
     if(newPasswrd === '')
-    errors = [...errors, 'Enter password']
+    errors = [...errors, 'Enter password'];
 
-    console.log(errors)
+    console.log(errors);
 
     if(errors.length > 0) {
-        alert(errors.join(', '))
+        alert(errors.join(', '));
     } else {
-        const redirect = '/home/jamb-score/user.html'
+        const redirect = './home/jamb-score/user.html';
        
-        window.location.href = redirect
+        window.location.href = redirect;
     }
-
-    
-    // if (userPass ==Number()) {
-    //     alert('Please fill the input');
-    //     aTag.removeAttribute('href');
-    // }
-
-
-    // else if (userPass==='') {
-    //     // alert('Youre now logged in');
-    //     aTag.removeAttribute('disabled', 'disabled');
-    // }
-
-    // else {
-    //     // prompt('which year did you write your Waec?')
-    //     alert('Youre now logged in');
-        
-    //     // aTag.setAttribute('disabled');
-    // }
-
 })
