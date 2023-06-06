@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Background-image/jamb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Coontainer */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* outline: 1px solid ; */
+    margin: 120px auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Input field */
+
+input[type=text] {
+    width: 100%;
+    outline: none;
+    margin: 10px;
+    padding: 7px 8px;
+    font-size: 17px;
+}
+
+input[type=password] {
+    width: 100%;
+    outline: none;
+    margin: 10px;
+    padding: 7px 8px;
+    font-size: 17px;
+} 
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+/* Checkbox & Rememeber your password */
+
+.check-box {
+    width: 100%;
+    color: white;
+    /* outline: 1px solid; */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 8px;
+}
+
+/* Button container */
+
+.btn-cont {
+    width: 100%;
+    /* outline: 1px solid; */
+    margin: 10px;
+    /* margin-top: 8px; */
+}
+
+button {
+    width: 100%;
+    padding: 7px 0;
+    font-size: 18px;
+    transition: 3s ease;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+/* Header login */
+
+h2 {
+    font-size: 35px;
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url(Background-image/jamb.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 90vh;
+        overflow-y: hidden;
+        /* background-size: 10px; */
+    }
+
+    /* Coontainer */
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    /* outline: 1px solid ; */
+    margin: 100px auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Input field */
+
+input[type=text] {
+    width: 97%;
+    outline: none;
+    padding: 7px 8px;
+    font-size: 17px;
+}
+
+input[type=password] {
+    width: 97%;
+    outline: none;
+    padding: 7px 8px;
+    font-size: 17px;
+} 
+
+/* Button container */
+
+.btn-cont {
+    width: 97%;
+    /* outline: 1px solid; */
+    margin: 10px;
+}
+}

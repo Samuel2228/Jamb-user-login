@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Main container style */
+
+
+.container {
+    margin:100px auto;
+    /* outline: 1px solid; */
+    /* height: 100vh; */
+    width: 650px;
+
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Body Style */
+
+
+body {
+    font-family: cursive;
+    background-image: url(Image/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* All the Div And Label Style */
+
+
+.label1,
+.label2,
+.label3,
+.label4 {
+    /* outline: 1px solid red; */
+    padding-bottom: 20px;
+}
+
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+
+label {
+    font-size: 28px;
+    color: green;
+}
+
+.sub-head {
+    color: green;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Input text style */
+
+
+input[type=text] {
+    /* padding: 10px; */
+    width: 60%;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 8px 6px;
+}
+
+
+/* Button Style */
+.check-btn {
+    display: flex;
+    /* outline: 1px solid; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+.check {
+    width: 100%;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: green;
+    background-color: green;
+    color: white;
+    transition: 3s ease;
+}
+
+.check:hover {
+    color: green;
+    background-color: transparent;
+}
+
+.icon {
+    outline: 1px solid;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+i {
+    outline: 1px solid ;
+    width: 30px;
+    text-align: center;
+    align-self: center;
+    /* font-size: 35px; */
+}
+
+/* H1 And H3 Styles */
+
+h3 {
+    text-align: center;
+    margin-top: 18px;
+    /* font-size: 27px; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    /* margin-top: 0px; */
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        margin:100px auto;
+        /* outline: 1px solid; */
+        /* height: 100vh; */
+        width: 100%;
+    
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .container div {
+        display: flex;
+        justify-content: space-between;
+        /* outline: 1px solid; */
+        /* width: 105%; */
+        /* margin-top: 10px; */
+    }
+
+    body {
+        font-family: cursive;
+        background-image: url(Image/bg2.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow-y: hidden;
+    }
+
+}
